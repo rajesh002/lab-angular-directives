@@ -1,0 +1,74 @@
+<h1>This is a Attribute Directives</h1>
+<p [ngStyle]="{'color':'red'}">Attribute Change</p>
+<p [ngStyle]="{'color':'skyblue'}">Attribute Change by Using NgClass</p>
+<p [ngStyle]="{'color':'green'}">Attribute Change by Using NgStyle</p>
+<br>
+
+
+<p [ngClass]="{'text-success':value}">Attribute Change</p>
+<p [ngClass]="{'text-success':value}">Attribute Change by using NgClass</p>
+
+<button (click)=change()>change color</button>
+
+<br>
+<p [ngClass]="{'text-success':value}">Attribute Change</p>
+<p [ngStyle]="{'color':'red'}">Attribute Change by using NgClass</p>
+
+<br>
+
+
+<div *ngIf="show" [ngStyle]="{'font-weight':'bold'}">Demonstrate of Structural Directives - *ngIf</div>
+<button (click)="show = !show">{{show ? 'hide' : 'show'}}</button>
+<br>
+
+
+<h1>Demonstrate ngFor</h1>
+<li *ngFor="let phone of phones">
+  {{ phone }}
+</li>
+<br>
+<br>
+
+<h4>Demonistrate NgSwitch</h4>
+<div class='box'>
+  <div class='table'>
+    <span>sr.No </span>
+    <span>Student Name </span>
+    <span>Course </span>
+    <span>Grade </span>
+  </div>
+  <ul class="list" *ngFor="let student of students" [ngSwitch]="student.grade">
+    <li *ngSwitchCase="'A'" class="grade-A">
+      <div class='data'>
+        <span>{{student.sno}}</span>
+        <span>{{ student.name }}</span>
+        <span>{{student.course}}</span>
+        <span>{{ student.grade }}</span>
+      </div>
+    </li>
+    <li *ngSwitchCase="'B'" class="grade-B">
+      <div class='data'>
+        <span>{{student.sno}}</span>
+        <span>{{ student.name }}</span>
+        <span>{{student.course}}</span>
+        <span>{{ student.grade }}</span>
+      </div>
+    </li>
+    <li *ngSwitchCase="'C'" class="grade-C">
+      <div class='data'>
+        <span>{{student.sno}}</span>
+        <span>{{ student.name }}</span>
+        <span>{{student.course}}</span>
+        <span>{{ student.grade }}</span>
+      </div>
+    </li>
+    <li *ngSwitchDefault class="grade-D">
+      <div class='data'>
+        <span>{{student.sno}}</span>
+        <span>{{ student.name }}</span>
+        <span>{{student.course}}</span>
+        <span>{{ student.grade }}</span>
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,60 @@
+.text-success {
+  color: cyan;
+}
+
+
+.data {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style: none;
+}
+
+
+
+.color {
+  color: blue;
+}
+
+.task1,
+.task2 {
+  /* border: 1px solid green; */
+  margin-left: 30%;
+  margin-top: 20px;
+  padding: 30px;
+}
+
+.text-success {
+  color: cyan;
+}
+
+.grade-A {
+  color: red;
+}
+
+.grade-B {
+  color: blue;
+}
+
+.grade-C {
+  color: green;
+}
+
+.box {
+  border: 1px solid blue;
+  margin: 20px;
+}
+
+.table {
+  margin-left: 35px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+
+.data {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+
+.list {
+  list-style: none;
+}
